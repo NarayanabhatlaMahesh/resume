@@ -1,0 +1,18 @@
+<form method="post">
+    {% csrf_token %}
+    <form method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="ZOomWeCDymBFa0y71gknsfz9NTh3FTi4Vdb79GAefLcHY4QJlPim4L7YBvfdQT6C">
+        <label for="id_name">Name:</label>
+          <input type="text" name="name" required="" id="id_name">
+        <label for="id_start_duration">Start duration:</label>
+          <input type="date" name="start_duration" required="" id="id_start_duration">
+        <label for="id_end_duration">End duration:</label>
+          <input type="date" name="end_duration" required="" id="id_end_duration">
+        <label for="id_score">Score:</label>
+          <input type="number" name="score" required="" id="id_score">
+        <label for="id_course_name">Course name:</label>
+          <input type="text" name="course_name" required="" id="id_course_name">
+        <input type="submit">
+    </form>
+    {{form.errors}}
+</form>
